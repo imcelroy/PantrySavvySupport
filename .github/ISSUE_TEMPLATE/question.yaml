@@ -1,0 +1,28 @@
+name: Question
+description: File a Feature Request
+title: "[Question]: "
+labels: ["question"]
+assignees:
+  - imcelroy
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks you again for using PantrySavvy! We are sorry something isn't clear. I'm here to help!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: What is your question?
+      description: Please describe your question in as much detail as possible
+      placeholder: Details here...
+      value: "Details!"
+    validations:
+      required: true
